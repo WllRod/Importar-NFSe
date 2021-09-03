@@ -1,0 +1,107 @@
+
+    
+    {
+        "3303906": {
+            "ESTADO": "RJ",
+            "CNPJ_TOMADOR": 
+                "NFe;CPFCNPJTomador;CPF"
+            ,
+            "CNPJ_PRESTADOR": 
+                "NFe;CPFCNPJPrestador;CNPJ",
+                "NFe;CPFCNPJPrestador;CPF"
+            ,
+            "NUMERO_NFE": 
+                "NFe;ChaveNFe;NumeroNFe"
+            ,
+            "SERIE_NFE": 
+                "NFe;ChaveNFe;SerieNFe"
+            ,
+            "DATA_EMISSAO": 
+                "NFe;ChaveNFe;DataEmissaoNFe"
+            ,
+            "VALOR_SERVICO": 
+                "NFe;ValorServicos"
+            ,
+            "VALOR_BASE": 
+                "NFe;ValorBase"
+            ,
+            "VALOR_LIQUIDO": 
+                
+            ,
+            "VALOR_ISS": 
+                "NFe;ValorISS"
+            ,
+            "ALIQUOTA_SERVICO": 
+                "NFe;AliquotaServicos"
+            ,
+            "VALOR_INSS": 
+                "NFe;ValorInss"
+            ,
+            "VALOR_IR": 
+                "NFe;ValorIr"
+            ,
+            "VALOR_PIS": 
+                "NFe;ValorPis"
+            ,
+            "VALOR_COFINS": 
+                "NFe;ValorCofins"
+            ,
+            "VALOR_CSLL": 
+                "NFe;ValorCsll"
+            
+        }
+    },
+    {
+        "3301702": {
+            "CIDADE": "DUQUE DE CAXIAS",
+            "CNPJ_TOMADOR": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;TomadorServico;IdentificacaoTomador;CpfCnpj;Cnpj",
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;TomadorServico;IdentificacaoTomador;CpfCnpj;Cpf"
+
+            ,
+            "CNPJ_PRESTADOR": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;PrestadorServico;IdentificacaoPrestador;Cnpj",
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;PrestadorServico;IdentificacaoPrestador;Cpf"
+
+            ,
+            "NUMERO_NFE": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;IdentificacaoRps;Numero"
+            ,
+            "SERIE_NFE": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;IdentificacaoRps;Serie"
+            ,
+            "DATA_EMISSAO": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;DataEmissao"
+            ,
+            "VALOR_SERVICO": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorServicos"
+            ,
+            "VALOR_BASE": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;BaseCalculo"
+            ,
+            "VALOR_LIQUIDO": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorLiquidoNfse"
+            ,
+            "VALOR_ISS": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "ALIQUOTA_SERVICO": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "VALOR_INSS": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "VALOR_IR": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "VALOR_PIS": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "VALOR_COFINS": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            ,
+            "VALOR_CSLL": 
+                "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+            
+        }
+    }

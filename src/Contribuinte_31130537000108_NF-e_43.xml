@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<NFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.petropolis.sigiss.com.br">
+<InscricaoPrestador>11131718</InscricaoPrestador>
+<IEPrestador></IEPrestador>
+<CPFCNPJPrestador>
+<CNPJ>33534889000146</CNPJ>
+</CPFCNPJPrestador>
+<ChaveNFe>
+<NumeroNFe>43</NumeroNFe>
+<SerieNFe>1</SerieNFe>
+<CodigoVerificacao>PSVWDU23</CodigoVerificacao>
+<DataEmissaoNFe>2021-6-8</DataEmissaoNFe>
+</ChaveNFe>
+<RazaoSocialPrestador>LEANDRO TESCH CORREA 08909834706</RazaoSocialPrestador>
+<EnderecoPrestador>
+<Logradouro>JOSÉ CHAVES</Logradouro>
+<NumeroEndereco>59</NumeroEndereco>
+<ComplementoEndereco>Ruan Antonio Medeiros, Serv. Garcia</ComplementoEndereco>
+<Bairro>INDEPENDÊNCIA </Bairro>
+<Cidade>Petrópolis</Cidade>
+<UF>RJ</UF>
+<CEP>25645255</CEP>
+</EnderecoPrestador>
+<TelefonePrestador>998765278</TelefonePrestador>
+<EmailPrestador>leandrotestchcorreagmail.com</EmailPrestador>
+<StatusNFe>Ativa</StatusNFe>
+<TributacaoNFe>Tributado no Prestador</TributacaoNFe>
+<OpcaoSimples>NÂO</OpcaoSimples>
+<ValorServicos>360,00</ValorServicos>
+<ValorBase>360,00</ValorBase>
+<CodigoServico>50452008</CodigoServico>
+<AliquotaServicos>0,00</AliquotaServicos>
+<ValorISS>0,00</ValorISS>
+<ISSRetido>NÂO</ISSRetido>
+<InscricaoTomador>1832</InscricaoTomador>
+<CPFCNPJTomador>
+<CPF>31130537000108</CPF>
+</CPFCNPJTomador>
+<IETomador></IETomador>
+<RazaoSocialTomador>CASA DO ALEMÃO INDÚSTRIA E COMÉRCIO DE LANCHES LTD</RazaoSocialTomador>
+<EnderecoTomador>
+<Logradouro>AYRTON SENNA</Logradouro>
+<NumeroEndereco>927</NumeroEndereco>
+<ComplementoEndereco></ComplementoEndereco>
+<Bairro>QUITANDINHA </Bairro>
+<Cidade>Petrópolis</Cidade>
+<UF>RJ</UF>
+<CEP>25650340</CEP>
+</EnderecoTomador>
+<TelefoneTomador>2422330200</TelefoneTomador>
+<EmailTomador>fiscalcasadoalemao.com.br</EmailTomador>
+<Discriminacao></Discriminacao>
+<ValorInss></ValorInss>
+<ValorIr></ValorIr>
+<ValorPis></ValorPis>
+<ValorCofins></ValorCofins>
+<ValorCsll></ValorCsll>
+</NFe>

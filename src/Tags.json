@@ -1,0 +1,149 @@
+{
+    "3301702": {
+        "COD_CIDADE": "3301702",
+        "CIDADE": "DUQUE DE CAXIAS",
+        "ESTADO": "RJ",
+        "TAG_CIDADE": [],
+        "TAG_ESTADO": [],
+        "TAG_CODMUN": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:PrestadorServico;tc:Endereco;tc:Cidade"
+        ],
+        "CNPJ_TOMADOR": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:TomadorServico;tc:IdentificacaoTomador;tc:CpfCnpj;tc:Cnpj"
+        ],
+        "CNPJ_PRESTADOR": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:PrestadorServico;tc:IdentificacaoPrestador;tc:CpfCnpj;tc:Cnpj"
+        ],
+        "NUMERO_NFE": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Numero"
+        ],
+        "SERIE_NFE": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:NaturezaOperacao"
+        ],
+        "DATA_EMISSAO": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:DataEmissao"
+        ],
+        "VALOR_SERVICO": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorServicos"
+        ],
+        "VALOR_BASE": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:BaseCalculo"
+        ],
+        "VALOR_LIQUIDO": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorLiquidoNfse"
+        ],
+        "VALOR_ISS": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorIssRetido"
+        ],
+        "ALIQUOTA_SERVICO": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:Aliquota"
+        ],
+        "VALOR_INSS": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorInss"
+        ],
+        "VALOR_IR": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorIr"
+        ],
+        "VALOR_PIS": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorPis"
+        ],
+        "VALOR_COFINS": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorCofins"
+        ],
+        "VALOR_CSLL": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorCsll"
+        ]
+    },
+    "330906": {
+        "COD_CIDADE": "330906",
+        "CIDADE": "PETROPOLIS",
+        "ESTADO": "RJ",
+        "TAG_CIDADE": [
+            "NFe;EnderecoPrestador;Cidade"
+        ],
+        "TAG_ESTADO": [
+            "NFe;EnderecoPrestador;UF"
+        ],
+        "TAG_CODMUN": [],
+        "CNPJ_TOMADOR": [
+            "NFe;CPFCNPJTomador;CPF"
+        ],
+        "CNPJ_PRESTADOR": [
+            "NFe;CPFCNPJPrestador;CNPJ"
+        ],
+        "NUMERO_NFE": [
+            "NFe;ChaveNFe;NumeroNFe"
+        ],
+        "SERIE_NFE": [
+            "NFe;ChaveNFe;SerieNFe"
+        ],
+        "DATA_EMISSAO": [
+            "NFe;ChaveNFe;DataEmissaoNFe"
+        ],
+        "VALOR_SERVICO": [
+            "NFe;ValorServicos"
+        ],
+        "VALOR_BASE": [
+            "NFe;ValorBase"
+        ],
+        "VALOR_LIQUIDO": [],
+        "VALOR_ISS": [
+            "NFe;ValorISS"
+        ],
+        "ALIQUOTA_SERVICO": [
+            "NFe;AliquotaServicos"
+        ],
+        "VALOR_INSS": [],
+        "VALOR_IR": [],
+        "VALOR_PIS": [],
+        "VALOR_COFINS": [],
+        "VALOR_CSLL": []
+    },
+    "3304557": {
+        "COD_CIDADE": "3304557",
+        "CIDADE": "RIO DE JANEIRO",
+        "ESTADO": "RJ",
+        "TAG_CIDADE": [],
+        "TAG_ESTADO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;PrestadorServico;Endereco;Uf"
+        ],
+        "TAG_CODMUN": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;PrestadorServico;Endereco;CodigoMunicipio"
+        ],
+        "CNPJ_TOMADOR": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;TomadorServico;IdentificacaoTomador;CpfCnpj;Cnpj"
+        ],
+        "CNPJ_PRESTADOR": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;PrestadorServico;IdentificacaoPrestador;Cnpj"
+        ],
+        "NUMERO_NFE": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;IdentificacaoRps;Numero"
+        ],
+        "SERIE_NFE": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;IdentificacaoRps;Serie"
+        ],
+        "DATA_EMISSAO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;DataEmissaoRps"
+        ],
+        "VALOR_SERVICO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorServicos"
+        ],
+        "VALOR_BASE": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;BaseCalculo"
+        ],
+        "VALOR_LIQUIDO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorLiquidoNfse"
+        ],
+        "VALOR_ISS": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;ValorIss"
+        ],
+        "ALIQUOTA_SERVICO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;Aliquota"
+        ],
+        "VALOR_INSS": [],
+        "VALOR_IR": [],
+        "VALOR_PIS": [],
+        "VALOR_COFINS": [],
+        "VALOR_CSLL": []
+    }
+}

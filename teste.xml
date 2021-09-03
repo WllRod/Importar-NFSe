@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ConsultarNfseRpsResposta xmlns:tc="http://www.issnetonline.com.br/webserviceabrasf/vsd/tipos_complexos.xsd" xmlns:ts="http://www.issnetonline.com.br/webserviceabrasf/vsd/tipos_simples.xsd" xmlns="http://www.issnetonline.com.br/webserviceabrasf/vsd/servico_consultar_nfse_rps_resposta.xsd">
+  <CompNfse>
+    <tc:Nfse>
+      <tc:InfNfse>
+        <tc:Numero>982</tc:Numero>
+        <tc:CodigoVerificacao> 3A 1B 30</tc:CodigoVerificacao>
+        <tc:DataEmissao>2021-08-02T14:03:39</tc:DataEmissao>
+        <tc:NaturezaOperacao>1</tc:NaturezaOperacao>
+        <tc:RegimeEspecialTributacao>1</tc:RegimeEspecialTributacao>
+        <tc:OptanteSimplesNacional>2</tc:OptanteSimplesNacional>
+        <tc:IncentivadorCultural>2</tc:IncentivadorCultural>
+        <tc:Competencia>202108</tc:Competencia>
+        <tc:OutrasInformacoes>  .</tc:OutrasInformacoes>
+        <tc:Servico>
+          <tc:ItemListaServico>709</tc:ItemListaServico>
+          <tc:CodigoCnae>3811400</tc:CodigoCnae>
+          <tc:CodigoTributacaoMunicipio>709</tc:CodigoTributacaoMunicipio>
+          <tc:Discriminacao>
+MÊS DE COMPETÊNCIA JULHO 2021					
+
+- Transporte para destinação final de resíduos (classe II)    / 25 X  R$ 59,00  = R$: 1475,00			
+- Local de coleta: Duque de Caxias - RJ					
+
+
+VENCIMENTO :12/08/2021					
+</tc:Discriminacao>
+          <tc:MunicipioPrestacaoServico>3301702</tc:MunicipioPrestacaoServico>
+          <tc:Valores>
+            <tc:ValorServicos>1475</tc:ValorServicos>
+            <tc:ValorDeducoes>0</tc:ValorDeducoes>
+            <tc:ValorPis>9.59</tc:ValorPis>
+            <tc:ValorCofins>44.25</tc:ValorCofins>
+            <tc:ValorInss>0</tc:ValorInss>
+            <tc:ValorIr>14.75</tc:ValorIr>
+            <tc:ValorCsll>14.75</tc:ValorCsll>
+            <tc:IssRetido>1</tc:IssRetido>
+            <tc:OutrasRetencoes>0</tc:OutrasRetencoes>
+            <tc:BaseCalculo>1475</tc:BaseCalculo>
+            <tc:Aliquota>5</tc:Aliquota>
+            <tc:ValorLiquidoNfse>1317.91</tc:ValorLiquidoNfse>
+            <tc:ValorIssRetido>73.75</tc:ValorIssRetido>
+            <tc:ValorIss>0</tc:ValorIss>
+            <tc:DescontoCondicionado>0</tc:DescontoCondicionado>
+            <tc:DescontoIncondicionado>0</tc:DescontoIncondicionado>
+          </tc:Valores>
+        </tc:Servico>
+        <tc:PrestadorServico>
+          <tc:IdentificacaoPrestador>
+            <tc:CpfCnpj>
+              <tc:Cnpj>14177887000100</tc:Cnpj>
+            </tc:CpfCnpj>
+            <tc:InscricaoMunicipal>99132878</tc:InscricaoMunicipal>
+          </tc:IdentificacaoPrestador>
+          <tc:RazaoSocial>Ami3 Solucoes Ambientais e Transporte de Residuos Ltda</tc:RazaoSocial>
+          <tc:Endereco>
+            <tc:Endereco>Rodovia Washington Luiz</tc:Endereco>
+            <tc:Numero>18695</tc:Numero>
+            <tc:Complemento>LADO IMPAR  KM 19</tc:Complemento>
+            <tc:Bairro>Santa Cruz da Serra</tc:Bairro>
+            <tc:Cidade>3301702</tc:Cidade>
+            <tc:Estado>RJ</tc:Estado>
+            <tc:Cep>25240005</tc:Cep>
+          </tc:Endereco>
+          <tc:Contato>
+            <tc:Email>ami3solucaoambiental@gmail.com</tc:Email>
+          </tc:Contato>
+        </tc:PrestadorServico>
+        <tc:TomadorServico>
+          <tc:IdentificacaoTomador>
+            <tc:CpfCnpj>
+              <tc:Cnpj>31130537000280</tc:Cnpj>
+            </tc:CpfCnpj>
+            <tc:InscricaoMunicipal>75994</tc:InscricaoMunicipal>
+          </tc:IdentificacaoTomador>
+          <tc:RazaoSocial>Casa do Alemão Indústria e Comércio de Lanches Ltda.</tc:RazaoSocial>
+          <tc:Endereco>
+            <tc:Endereco>Rodovia Washington Luiz</tc:Endereco>
+            <tc:Numero>12888</tc:Numero>
+            <tc:Bairro>Vila São Luís</tc:Bairro>
+            <tc:Cidade>3301702</tc:Cidade>
+            <tc:Estado>RJ</tc:Estado>
+            <tc:Cep>25055009</tc:Cep>
+          </tc:Endereco>
+          <tc:Contato>
+            <tc:Telefone>2422330200</tc:Telefone>
+            <tc:Email>fiscal@casadolemao.com.br</tc:Email>
+          </tc:Contato>
+        </tc:TomadorServico>
+        <tc:OrgaoGerador>
+          <tc:CodigoMunicipio>3301702</tc:CodigoMunicipio>
+          <tc:Uf>RJ</tc:Uf>
+        </tc:OrgaoGerador>
+        <tc:ValorCredito>0</tc:ValorCredito>
+      </tc:InfNfse>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="http://www.w3.org/TR/2000/REC-xhtml1-20000126/">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>MB+SjfbJCnfmQ1tNZlkv0bB5PgY=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+        </SignatureValue>
+        <KeyInfo>
+          <X509Data>
+            <X509Certificate>
+            </X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </tc:Nfse>
+  </CompNfse>
+</ConsultarNfseRpsResposta>
