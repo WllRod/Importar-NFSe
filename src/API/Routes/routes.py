@@ -2,6 +2,7 @@ from API import app
 from flask import json, request, jsonify, Flask, render_template_string
 from Controllers import receive_xml, get_data
 import base64
+from Errors import generate_error_message
 
 @app.route("/", methods=["Get"])
 def home():
@@ -9,15 +10,15 @@ def home():
 
 @app.route("/XML", methods=["Get"])
 def xml_standard():
-    
-    req = request.query_string
-    decodedText = base64.b64decode(req)
-    d   = receive_xml(decodedText)
-    print(d)
-    return jsonify({"Data": [d]}), 200
+    try:
+        req = request.query_string
+            #decodedText = base64.b64decode(req)
+        d   = receive_xml(req)
+            
+        return jsonify({"Data": [d]}), 200
+    except Exception as e:
+        return jsonify({"Error": str(e)}),400
    
-    
-
 @app.route("/addTag", methods=["Post"])
 def add_tag():
     try:
@@ -26,5 +27,4 @@ def add_tag():
         d   = get_data(xml, req)
         return jsonify({"Data": d})
     except Exception as e:
-        print(e)
         return jsonify({"Error": str(e)}), 400
