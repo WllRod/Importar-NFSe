@@ -1,1 +1,2 @@
 from .GenerateErrorText import generate_error_message
+from .HandleExceptions import error_decorator

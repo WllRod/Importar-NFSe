@@ -1,19 +1,13 @@
-# def get_database():
-#     from pymongo import MongoClient
-#     import pymongo
+def decorator(f):
+    def wrapper(*args):
+        
+       f(*args)
+       
+    return wrapper
 
+@decorator
+def teste(*args):
+    (d, s) = args
+    print(d, s)
 
-#     client  = MongoClient(CONNECTION_STRING)
-
-#     return client["NFSe"]
-
-# dbname      = get_database()
-# collection  = dbname["Tags"]
-# details     = collection.find()
-# for item in details:
-#     print(item["COD_CIDADE"])
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-print(os.getenv("Teste"))
+teste(1, 2)

@@ -52,6 +52,12 @@
         ],
         "VALOR_CSLL": [
             "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:ValorCsll"
+        ],
+        "RETEM_ISS": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:Servico;tc:Valores;tc:IssRetido"
+        ],
+        "COD_VERIFICACAO": [
+            "ConsultarNfseRpsResposta;CompNfse;tc:Nfse;tc:InfNfse;tc:CodigoVerificacao"
         ]
     },
     "330906": {
@@ -97,7 +103,14 @@
         "VALOR_IR": [],
         "VALOR_PIS": [],
         "VALOR_COFINS": [],
-        "VALOR_CSLL": []
+        "VALOR_CSLL": [],
+        "RETEM_ISS": [
+            "NFe;ISSRetido"
+        ],
+        "COD_VERIFICACAO": [
+            "NFe;ChaveNFe;CodigoVerificacao"
+
+        ]
     },
     "3304557": {
         "COD_CIDADE": "3304557",
@@ -144,6 +157,12 @@
         "VALOR_IR": [],
         "VALOR_PIS": [],
         "VALOR_COFINS": [],
-        "VALOR_CSLL": []
+        "VALOR_CSLL": [],
+        "RETEM_ISS": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;Servico;Valores;IssRetido"
+        ],
+        "COD_VERIFICACAO": [
+            "ConsultarNfseResposta;ListaNfse;CompNfse;Nfse;InfNfse;CodigoVerificacao"
+        ]
     }
 }

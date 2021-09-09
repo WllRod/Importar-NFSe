@@ -2,7 +2,6 @@ from API import app
 from flask import json, request, jsonify, Flask, render_template_string
 from Controllers import receive_xml, get_data
 import base64
-from Errors import generate_error_message
 
 @app.route("/", methods=["Get"])
 def home():
@@ -10,10 +9,11 @@ def home():
 
 @app.route("/XML", methods=["Get"])
 def xml_standard():
+    
     try:
         req = request.query_string
-            #decodedText = base64.b64decode(req)
-        d   = receive_xml(req)
+        decodedText = base64.b64decode(req)
+        d   = receive_xml(decodedText)
             
         return jsonify({"Data": [d]}), 200
     except Exception as e:

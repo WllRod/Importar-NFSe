@@ -1,47 +1,34 @@
-from typing import Dict
 from Components import returnValue, return_json
 import regex, unicodedata
-from .HandleFile import Handle_Json
 from Models import MongoConnector
-from Errors import generate_error_message
+from Errors import error_decorator
 
+@error_decorator(__file__, (Exception))
 def format_xml(xml:str):
-    try:
-        xml = xml.decode('utf-8')
-        if xml[0:1] != "<": return xml[xml.find("<"):]
-        return xml
-    except Exception as e:
-        generate_error_message(
-            str(e),
-            __file__
-        )
+    xml = xml.decode('utf-8')
+    if xml[0:1] != "<": return xml[xml.find("<"):]
+    return xml
+    
 
+@error_decorator(__file__, (Exception))
 def read_xml_tag(list, response):
-    try:
-        for i in list:
-            for b in i:
-                value   = returnValue(
-                    [b],
-                    response
-                )
-                if value is not None:
-                    return value
-        return None
-    except Exception as e:
-        generate_error_message(
-            str(e),
-            __file__
-        )
+    for i in list:
+        for b in i:
+            value   = returnValue(
+                [b],
+                response
+            )
+            if value is not None:
+                return value
+    return None
+    
 
+@error_decorator(__file__, (Exception))
 def return_compressed_list(dictData, key, list):
-    try:
-        MAX_LENGHT  = 0
-        return [dictData[v][key] for v in list]
-    except Exception as e:
-        generate_error_message(
-            str(e),
-            __file__
-        )
+   
+    MAX_LENGHT  = 0
+    return [dictData[v][key] for v in list]
+   
 
 """RECEBENDO A ESTRUTURA DO XML DE ORIGEM DO ADVPL"""
 def receive_xml(xml:dict):
@@ -72,36 +59,43 @@ def receive_xml(xml:dict):
 
     return set_dict_data(data, jsonData[cidade], resp)
 
+@error_decorator(__file__, (Exception))
 def extract_data_city_tag(jsonData, codCidade, resp, data):
-    try:
-        tagCid  = return_compressed_list(jsonData, "TAG_CIDADE", codCidade)
-        cidade  = read_xml_tag(
-            tagCid,
+    tagCid  = return_compressed_list(jsonData, "TAG_CIDADE", codCidade)
+    cidade  = read_xml_tag(
+        tagCid,
+        resp
+    )
+    if cidade is None:
+        raise Exception("Cidade não encontrada!")
+
+    cidade  = regex.sub(r'\p{Mn}', '', unicodedata.normalize('NFKD', cidade.upper()))
+    cidade  = [ i for i in jsonData if jsonData[i]["CIDADE"] == cidade][0]
+        
+    return set_dict_data(data, jsonData[cidade], resp)
+    
+
+@error_decorator(__file__, (Exception))
+def set_dict_data(*args):
+    
+    (data, json, resp)  = args
+    for v in data:
+        data[v] = returnValue(
+            json[v],
             resp
         )
-        if cidade is None:
-            raise Exception("Cidade não encontrada!")
 
-        cidade  = regex.sub(r'\p{Mn}', '', unicodedata.normalize('NFKD', cidade.upper()))
-        cidade  = [ i for i in jsonData if jsonData[i]["CIDADE"] == cidade][0]
-        return set_dict_data(data, jsonData[cidade], resp)
-    except Exception as e:
-        generate_error_message(
-            str(e),
-            __file__
-        )
-
-def set_dict_data(data, json, resp):
-    try:
-        for v in data:
-            data[v] = returnValue(
-                json[v],
-                resp
-            ).encode('utf-8')
-        return data
-    except Exception as e:
-        
-        generate_error_message(
-            str(e),
-            __file__
-        )
+    retISS  = data["RETEM_ISS"].isnumeric()
+    if retISS:
+        if int(retISS) == 2:
+            data["RETEM_ISS"]   = False
+        elif int(retISS) == 1:
+            data["RETEM_ISS"]   = True
+    else:
+        retISS  = regex.sub(r'\p{Mn}', '', unicodedata.normalize('NFKD', data["RETEM_ISS"].upper()))
+        if retISS   == "NAO":
+            data["RETEM_ISS"]   = False
+        elif retISS == "SIM":
+            data["RETEM_ISS"]   = True
+    return data
+   
